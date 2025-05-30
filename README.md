@@ -8,7 +8,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
-[🚀 **Live Demo**](https://VibeCast.vercel.app) • [🏆 **Leaderboard**](https://VibeCast.vercel.app/leaderboard)
+[🚀 **Live Demo**](vibe-cast-one.vercel.app) • [🏆 **Leaderboard**](vibe-cast-one.vercel.app/leaderboard)
 
 *Built in 24 hours for the ultimate vibe check experience*
 
