@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🌟 VibeScope
+# 🌟 VibeCast
 ### *Discover Your Digital DNA in 5 Questions*
 
 [![Next.js](https://img.shields.io/badge/Next.js-15-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
@@ -11,8 +11,6 @@
 [🚀 **Live Demo**](https://vibescope.vercel.app) • [📱 **Mobile Preview**](https://vibescope.vercel.app) • [🏆 **Leaderboard**](https://vibescope.vercel.app/leaderboard)
 
 *Built in 24 hours for the ultimate vibe check experience*
-
-![VibeScope Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=VibeScope+Preview)
 
 </div>
 
@@ -103,13 +101,6 @@ npm run build
 npm start
 ```
 
-### 🎯 **Environment Setup**
-```bash
-# Optional: Add analytics or social sharing keys
-NEXT_PUBLIC_GA_ID=your_google_analytics_id
-NEXT_PUBLIC_SOCIAL_SHARE_URL=your_domain
-```
-
 ---
 
 ## 📁 **Project Structure**
@@ -149,182 +140,6 @@ vibescope/
 
 ---
 
-## 📈 **Performance Metrics**
-
-<div align="center">
-
-| Metric | Score | Status |
-|--------|-------|--------|
-| 🚀 **Performance** | 98/100 | ✅ Excellent |
-| ♿ **Accessibility** | 95/100 | ✅ Excellent |
-| 🎯 **Best Practices** | 100/100 | ✅ Perfect |
-| 🔍 **SEO** | 92/100 | ✅ Excellent |
-
-*Lighthouse scores on mobile*
-
-</div>
-
----
-
-## 🎨 **Design Philosophy**
-
-### 🌈 **Color Psychology**
-- **Purple Gradients** → Creativity & Innovation
-- **Glass Effects** → Modern & Sophisticated  
-- **Smooth Animations** → Delightful Experience
-- **High Contrast** → Accessibility First
-
-### 🎭 **User Experience**
-- **Micro-interactions** that feel magical
-- **Progressive disclosure** to avoid overwhelm
-- **Instant feedback** for every action
-- **Mobile-first** design thinking
-
----
-
-## 🤝 **Contributing**
-
-We love contributions! Here's how you can help make VibeScope even better:
-
-### 🐛 **Found a Bug?**
-1. Check existing [issues](https://github.com/yourusername/vibescope/issues)
-2. Create a detailed bug report
-3. Include screenshots and steps to reproduce
-
-### 💡 **Have an Idea?**
-1. Open a [feature request](https://github.com/yourusername/vibescope/issues/new)
-2. Describe your vision
-3. Let's discuss implementation!
-
-### 🔧 **Want to Code?**
-```bash
-# Fork the repo
-git fork https://github.com/yourusername/vibescope.git
-
-# Create your feature branch
-git checkout -b feature/amazing-feature
-
-# Commit your changes
-git commit -m 'Add amazing feature'
-
-# Push to the branch
-git push origin feature/amazing-feature
-
-# Open a Pull Request
-```
-
----
-
-## 📊 **Analytics & Insights**
-
-### 📈 **Usage Stats**
-- **50,000+** quizzes completed
-- **4.8/5** average user rating
-- **85%** completion rate
-- **60%** social sharing rate
-
-### 🌍 **Global Reach**
-- Available in **12 languages**
-- Users from **50+ countries**
-- **Mobile-first** usage (78% mobile)
-
----
-
-## 🏆 **Awards & Recognition**
-
-- 🥇 **Best UI/UX** - Developer Challenge 2024
-- 🌟 **Most Viral App** - Social Media Awards
-- 🚀 **Fastest Growing** - Indie Maker Awards
-- 💎 **Design Excellence** - CSS Design Awards
-
----
-
-## 📱 **Mobile Experience**
-
-<div align="center">
-
-| Feature | iOS | Android | PWA |
-|---------|-----|---------|-----|
-| 📱 **Responsive Design** | ✅ | ✅ | ✅ |
-| 🔄 **Offline Support** | ✅ | ✅ | ✅ |
-| 📤 **Native Sharing** | ✅ | ✅ | ✅ |
-| 🏠 **Add to Home Screen** | ✅ | ✅ | ✅ |
-
-</div>
-
----
-
-## 🔮 **Roadmap**
-
-### 🎯 **Coming Soon**
-- [ ] 🤖 **AI-Powered Insights** - Deeper personality analysis
-- [ ] 👥 **Team Challenges** - Group vibe competitions  
-- [ ] 🎨 **Custom Themes** - Personalized color schemes
-- [ ] 📊 **Advanced Analytics** - Personal growth tracking
-
-### 🚀 **Future Vision**
-- [ ] 🌐 **Multi-language Support** - Global accessibility
-- [ ] 🎮 **Gamification** - Achievements & badges
-- [ ] 🤝 **Social Features** - Friend connections
-- [ ] 📱 **Native Mobile Apps** - iOS & Android
-
----
-
-## 📞 **Support & Community**
-
-### 💬 **Get Help**
-- 📧 **Email**: support@vibescope.com
-- 💬 **Discord**: [Join our community](https://discord.gg/vibescope)
-- 🐦 **Twitter**: [@VibeScope](https://twitter.com/vibescope)
-- 📱 **Instagram**: [@vibescope_app](https://instagram.com/vibescope_app)
-
-### 🌟 **Show Your Support**
-- ⭐ **Star this repo** if you love VibeScope!
-- 🐦 **Tweet about us** with #VibeScope
-- 📝 **Write a review** on Product Hunt
-- 🤝 **Refer friends** and spread the vibes!
-
----
-
-## 📄 **License**
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 **Acknowledgments**
-
-### 💝 **Special Thanks**
-- **Design Inspiration**: Dribbble community
-- **Color Palette**: Coolors.co
-- **Icons**: Lucide React
-- **Fonts**: Google Fonts
-- **Hosting**: Vercel team
-
-### 🎨 **Design Credits**
-- **UI/UX Design**: [Your Name](https://github.com/yourusername)
-- **Illustrations**: Custom created
-- **Photography**: Unsplash contributors
-
----
-
-<div align="center">
-
-### 🌟 **Made with ❤️ by developers who believe in good vibes**
-
-**[⭐ Star this repo](https://github.com/yourusername/vibescope)** • **[🚀 Try VibeScope](https://vibescope.vercel.app)** • **[🐦 Follow us](https://twitter.com/vibescope)**
-
----
-
-*"Your vibe attracts your tribe" - VibeScope Team*
-
-![Footer](https://via.placeholder.com/800x100/667eea/ffffff?text=Thanks+for+checking+out+VibeScope!)
-
-</div>
-```
-
----
-
 ## 🎯 **Why "VibeScope" is Perfect:**
 
 ### ✨ **Brand Benefits**
@@ -333,12 +148,3 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Descriptive** - Clearly explains the purpose
 - **Modern** - Appeals to Gen Z and Millennial audiences
 - **Scalable** - Works for future product expansions
-
-### 🚀 **Marketing Potential**
-- **Hashtag Ready** - #VibeScope #VibeCheck
-- **Domain Available** - vibescope.com, .app, .io
-- **Social Handles** - @vibescope across platforms
-- **Merchandise** - T-shirts, stickers, etc.
-
-This README is designed to be **visually stunning**, **informative**, and **engaging** - perfect for attracting contributors, users, and potential employers! 🌟
-
