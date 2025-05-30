@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 
-// Define the type of each result
 type Result = {
   name: string;
   vibe: keyof typeof globalStats.vibeDistribution;
@@ -8,7 +7,7 @@ type Result = {
   timestamp: number;
 };
 
-// Simulated database - in production, use a real database
+// Simulated database
 const globalStats = {
   totalUsers: 1247,
   vibeDistribution: {
@@ -21,8 +20,7 @@ const globalStats = {
 };
 
 export async function GET() {
-  // Simulate real-time updates
-  globalStats.totalUsers += Math.floor(Math.random() * 3);
+  globalStats.totalUsers += Math.floor(Math.random() * 3); // Simulate new users
 
   return NextResponse.json(globalStats);
 }
@@ -31,13 +29,11 @@ export async function POST(request: Request) {
   const body = await request.json();
   const { name, vibe, score } = body;
 
-  // Update global stats
   globalStats.totalUsers += 1;
   globalStats.vibeDistribution[
     vibe as keyof typeof globalStats.vibeDistribution
   ] += 1;
 
-  // Add to recent results (keep last 100)
   globalStats.recentResults.unshift({
     name,
     vibe,
