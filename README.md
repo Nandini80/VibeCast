@@ -8,7 +8,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.0-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-000000?style=for-the-badge&logo=vercel)](https://vercel.com/)
 
-[🚀 **Live Demo**](https://vibescope.vercel.app) • [📱 **Mobile Preview**](https://vibescope.vercel.app) • [🏆 **Leaderboard**](https://vibescope.vercel.app/leaderboard)
+[🚀 **Live Demo**](https://VibeCast.vercel.app) • [🏆 **Leaderboard**](https://VibeCast.vercel.app/leaderboard)
 
 *Built in 24 hours for the ultimate vibe check experience*
 
@@ -16,9 +16,9 @@
 
 ---
 
-## ✨ **What is VibeScope?**
+## ✨ **What is VibeCast?**
 
-VibeScope is an interactive personality quiz that reveals your unique digital vibe through 5 carefully crafted questions. Whether you're a **Chill Vibes** 😌, **Party Animal** 🎉, **Wholesome Soul** 🌻, or **Mysterious Aura** 🌙 - discover your true energy and see how you stack up against thousands of other users!
+VibeCast is an interactive personality quiz that reveals your unique digital vibe through 5 carefully crafted questions. Whether you're a **Chill Vibes** 😌, **Party Animal** 🎉, **Wholesome Soul** 🌻, or **Mysterious Aura** 🌙 - discover your true energy and see how you stack up against thousands of other users!
 
 ### 🎯 **Perfect For:**
 - 🎪 **Social Media Sharing** - Viral-ready results
@@ -85,8 +85,8 @@ VibeScope is an interactive personality quiz that reveals your unique digital vi
 
 ### 1️⃣ **Clone & Install**
 ```bash
-git clone https://github.com/yourusername/vibescope.git
-cd vibescope
+git clone https://github.com/Nandini80/VibeCast.git
+cd VibeCast
 npm install
 ```
 
@@ -99,24 +99,6 @@ npm run dev
 ```bash
 npm run build
 npm start
-```
-
----
-
-## 📁 **Project Structure**
-
-```
-vibescope/
-├── 📱 app/
-│   ├── 🏠 page.tsx              # Main quiz interface
-│   ├── 🏆 leaderboard/page.tsx  # Rankings & stats
-│   ├── 🎨 globals.css           # Custom styling
-│   └── 📄 layout.tsx            # App layout
-├── 🧩 components/
-│   └── 🎯 ui/                   # Reusable components
-├── 📊 lib/
-│   └── ⚙️ utils.ts              # Helper functions
-└── 📋 README.md                 # You are here!
 ```
 
 ---
@@ -140,7 +122,7 @@ vibescope/
 
 ---
 
-## 🎯 **Why "VibeScope" is Perfect:**
+## 🎯 **Why "VibeCast" is Perfect:**
 
 ### ✨ **Brand Benefits**
 - **Memorable** - Easy to remember and spell
