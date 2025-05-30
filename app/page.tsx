@@ -4,6 +4,13 @@ import { useState, useEffect } from "react"
 import { Users, Trophy, Share2, Zap, Heart, Moon, Coffee } from "lucide-react"
 import Link from "next/link"
 
+interface QuizOption {
+  text: string
+  vibe: string
+  points: number
+  icon: typeof Coffee | typeof Zap | typeof Heart | typeof Moon
+}
+
 const questions = [
   {
     id: 1,
@@ -109,7 +116,7 @@ export default function VibeCheckQuiz() {
     return () => clearInterval(interval)
   }, [])
 
-  const handleAnswer = (option: any) => {
+  const handleAnswer = (option: QuizOption) => {
     setIsLoading(true)
     setTimeout(() => {
       const newAnswers = { ...answers }
@@ -136,7 +143,7 @@ export default function VibeCheckQuiz() {
 
   const getVibeResult = () => {
     const maxScore = Math.max(...Object.values(answers))
-    const resultVibe = Object.entries(answers).find(([_, score]) => score === maxScore)?.[0] || "chill"
+    const resultVibe = Object.entries(answers).find(([, score]) => score === maxScore)?.[0] || "chill"
     return resultVibe as keyof typeof vibeTypes
   }
 
@@ -189,7 +196,7 @@ export default function VibeCheckQuiz() {
                   onChange={(e) => setUserName(e.target.value)}
                   placeholder="Enter your name..."
                   className="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-ring bg-background"
-                  onKeyPress={(e) => e.key === "Enter" && startQuiz()}
+                  onKeyDown={(e) => e.key === "Enter" && startQuiz()}
                 />
               </div>
 

@@ -3,7 +3,26 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 
-const vibeTypes = {
+// Define proper types for our data
+interface VibeType {
+  name: string
+  emoji: string
+  gradient: string
+  bgClass: string
+}
+
+interface VibeResult {
+  name: string
+  vibe: string
+  timestamp: number
+  score: number
+}
+
+interface VibeStats {
+  [key: string]: number
+}
+
+const vibeTypes: Record<string, VibeType> = {
   chill: {
     name: "Chill Vibes",
     emoji: "😌",
@@ -31,30 +50,32 @@ const vibeTypes = {
 }
 
 export default function Leaderboard() {
-  const [results, setResults] = useState<any[]>([])
+  const [results, setResults] = useState<VibeResult[]>([])
   const [filter, setFilter] = useState<string>("all")
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     // Simulate loading
     setTimeout(() => {
-      const savedResults = JSON.parse(localStorage.getItem("vibeResults") || "[]")
-      const sortedResults = savedResults
-        .sort((a: any, b: any) => b.score - a.score || b.timestamp - a.timestamp)
-        .slice(0, 50)
-      setResults(sortedResults)
+      try {
+        const savedResults = JSON.parse(localStorage.getItem("vibeResults") || "[]") as VibeResult[]
+        const sortedResults = savedResults.sort((a, b) => b.score - a.score || b.timestamp - a.timestamp).slice(0, 50)
+        setResults(sortedResults)
+      } catch (error) {
+        console.error("Error loading results:", error)
+        setResults([])
+      }
       setIsLoading(false)
     }, 500)
   }, [])
 
   const filteredResults = filter === "all" ? results : results.filter((result) => result.vibe === filter)
 
-  const getVibeStats = () => {
-    const stats = results.reduce((acc, result) => {
+  const getVibeStats = (): VibeStats => {
+    return results.reduce((acc: VibeStats, result) => {
       acc[result.vibe] = (acc[result.vibe] || 0) + 1
       return acc
     }, {})
-    return stats
   }
 
   const vibeStats = getVibeStats()
@@ -110,7 +131,7 @@ export default function Leaderboard() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {Object.entries(vibeTypes).map(([key, vibe]) => {
                 const count = vibeStats[key] || 0
-                const percentage = totalResults > 0 ? ((count / totalResults) * 100).toFixed(1) : 0
+                const percentage = totalResults > 0 ? ((count / totalResults) * 100).toFixed(1) : "0"
                 return (
                   <div
                     key={key}
@@ -172,7 +193,7 @@ export default function Leaderboard() {
             ) : (
               <div className="space-y-4">
                 {filteredResults.map((result, index) => {
-                  const vibe = vibeTypes[result.vibe as keyof typeof vibeTypes]
+                  const vibe = vibeTypes[result.vibe] || vibeTypes.chill
                   const timeAgo = new Date(result.timestamp).toLocaleDateString()
                   const isTopThree = index < 3
 
